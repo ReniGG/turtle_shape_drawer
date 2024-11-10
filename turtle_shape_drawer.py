@@ -22,6 +22,8 @@ def trigger(x, y):
     sides= int(input("How many sides should the shape have?"))
     length= int(input("How long should each side be?"))
     draw_shape(sides, length)
+    turtle_color = (random.random(), random.random(), random.random())
+    tina.color(turtle_color)
 
 ws.onscreenclick(trigger)
 
