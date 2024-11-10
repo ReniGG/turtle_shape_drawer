@@ -11,19 +11,19 @@ tina.color("#99ffe6")
 tina.pensize(5)
 tina.speed(0)
 
-
-sides= int(input("How many sides should the shape have?"))
-length= int(input("How long should each side be?"))
-
 def draw_shape(sides, length):
     angle = 360 / sides
     for i in range(sides):
         tina.forward(length)
         tina.left(angle)
             
-draw_shape(sides, length)
+def trigger(sides, length):
+    tina.clear()
+    sides= int(input("How many sides should the shape have?"))
+    length= int(input("How long should each side be?"))
+    draw_shape(sides, length)
 
+ws.onscreenclick(trigger)
 
-tina.color("#ffff99")
 
 turtle.done()
