@@ -17,7 +17,7 @@ def draw_shape(sides, length):
         tina.forward(length)
         tina.left(angle)
             
-def trigger(sides, length):
+def trigger(x, y):
     tina.clear()
     sides= int(input("How many sides should the shape have?"))
     length= int(input("How long should each side be?"))
