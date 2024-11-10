@@ -18,7 +18,6 @@ This program lets you choose the number of sides and length for a shape.
 ## How it works🔍
 - when you click anywhere on the screen, the program asks you to enter the number of sides and the length for each side
 - based on the input, the turtle calculates the right angle to create a closed shape and begins drawing by looping through each side
-- after completing a shape, the turtle’s color changes
 - the shape is redrawn every time you click on the screen
 
 ## Play around🎨
