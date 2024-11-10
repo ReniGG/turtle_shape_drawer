@@ -12,8 +12,8 @@ tina.pensize(5)
 tina.speed(0)
 
 
-sides= int(input("How many side should the shape have?"))
-length= int(input("How long should be one side?"))
+sides= int(input("How many sides should the shape have?"))
+length= int(input("How long should each side be?"))
 
 def draw_shape(sides, length):
     angle = 360 / sides
