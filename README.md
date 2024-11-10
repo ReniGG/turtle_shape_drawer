@@ -13,7 +13,7 @@ This program lets you choose the number of sides and length for a shape.
 
 ## Installation💻
 - to run this project, you need Python installed on your machine
-- you need to import the turtle module
+- you need to import the turtle and random module
 
 ## How it works🔍
 - when you click anywhere on the screen, the program asks you to enter the number of sides and the length for each side
