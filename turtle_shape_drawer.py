@@ -19,9 +19,15 @@ def draw_shape(sides, length):
             
 def trigger(x, y):
     tina.clear()
+     
+    tina.penup()
+    tina.goto(x,y)
+    tina.pendown()
+    
     sides= int(input("How many sides should the shape have?"))
     length= int(input("How long should each side be?"))
     draw_shape(sides, length)
+    
     turtle_color = (random.random(), random.random(), random.random())
     tina.color(turtle_color)
 
