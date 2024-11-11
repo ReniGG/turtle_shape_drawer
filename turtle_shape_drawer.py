@@ -24,12 +24,21 @@ def trigger(x, y):
     tina.goto(x,y)
     tina.pendown()
     
-    sides= int(input("How many sides should the shape have?"))
-    length= int(input("How long should each side be?"))
-    draw_shape(sides, length)
-    
-    turtle_color = (random.random(), random.random(), random.random())
-    tina.color(turtle_color)
+    try:
+        sides= int(input("How many sides should the shape have?"))
+        length= int(input("How long should each side be?"))
+
+        if sides <= 0 or length <= 0:
+            print("Please enter positive numbers only.")
+            sys.exit()  # Exit the program if invalid data is entered
+
+        draw_shape(sides, length)
+        turtle_color = (random.random(), random.random(), random.random())
+        tina.color(turtle_color)
+
+    except ValueError:
+        print("Please enter numbers only.")
+        sys.exit()  # Exit the program if non-integer input is provided
 
 ws.onscreenclick(trigger)
 
